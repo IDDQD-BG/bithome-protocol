@@ -1,0 +1,49 @@
+{
+    "id": "550a22e6ef602d49e41b2577afc1a6321241e9cbc99fca7d0653bcfba9250e98",
+    "pubkey": "1bf419f4ecfc12d7be0b0509d24bf65b45dd96facf7106e37bc1022ff162f7ae",
+    "created_at": 1769017397,
+    "kind": 30023,
+    "content": "",
+    "tags": [
+        [
+            "bithome",
+            "v1"
+        ],
+        [
+            "d",
+            "1dd17ee8-4fd0-4c40-a748-c1a77938fcb0"
+        ],
+        [
+            "type",
+            "sell"
+        ],
+        [
+            "exp",
+            "1771609397"
+        ],
+        [
+            "lat",
+            "61.77312286453146"
+        ],
+        [
+            "lon",
+            "64.33593750000001"
+        ],
+        [
+            "sats_per_m2",
+            "83333333"
+        ],
+        [
+            "sqm",
+            "54"
+        ],
+        [
+            "price_display",
+            "45 btc"
+        ],
+        [
+            "price_currency",
+            "btc"
+        ]
+    ]
+}

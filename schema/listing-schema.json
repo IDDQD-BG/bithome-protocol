@@ -1,0 +1,184 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://bithome-protocol.org/schema/listing-schema.json",
+    "title": "BitHome Listing Event (kind 30023)",
+    "type": "object",
+    "required": [
+        "pubkey",
+        "created_at",
+        "kind",
+        "tags"
+    ],
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+        },
+        "pubkey": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+        },
+        "created_at": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "kind": {
+            "type": "integer",
+            "const": 30023
+        },
+        "content": {
+            "type": "string"
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "array",
+                "minItems": 2,
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "description": "Requires [\"bithome\",\"v1\"]",
+            "properties": {
+                "tags": {
+                    "contains": {
+                        "type": "array",
+                        "minItems": 2,
+                        "items": [
+                            {
+                                "const": "bithome"
+                            },
+                            {
+                                "const": "v1"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "description": "Requires [\"d\",\"<uuidv4>\"]",
+            "properties": {
+                "tags": {
+                    "contains": {
+                        "type": "array",
+                        "minItems": 2,
+                        "items": [
+                            {
+                                "const": "d"
+                            },
+                            {
+                                "type": "string",
+                                "pattern": "^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "description": "Requires [\"type\", <enum>]",
+            "properties": {
+                "tags": {
+                    "contains": {
+                        "type": "array",
+                        "minItems": 2,
+                        "items": [
+                            {
+                                "const": "type"
+                            },
+                            {
+                                "enum": [
+                                    "sell",
+                                    "rent_out",
+                                    "want_buy",
+                                    "want_rent"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "description": "Requires [\"exp\",\"<unix_seconds>\"]",
+            "properties": {
+                "tags": {
+                    "contains": {
+                        "type": "array",
+                        "minItems": 2,
+                        "items": [
+                            {
+                                "const": "exp"
+                            },
+                            {
+                                "pattern": "^[0-9]+$"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "description": "Requires [\"lat\",\"<float>\"]",
+            "properties": {
+                "tags": {
+                    "contains": {
+                        "type": "array",
+                        "minItems": 2,
+                        "items": [
+                            {
+                                "const": "lat"
+                            },
+                            {
+                                "pattern": "^-?[0-9]+(\\.[0-9]+)?$"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "description": "Requires [\"lon\",\"<float>\"]",
+            "properties": {
+                "tags": {
+                    "contains": {
+                        "type": "array",
+                        "minItems": 2,
+                        "items": [
+                            {
+                                "const": "lon"
+                            },
+                            {
+                                "pattern": "^-?[0-9]+(\\.[0-9]+)?$"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "description": "Requires [\"sats_per_m2\",\"<positive_integer>\"]",
+            "properties": {
+                "tags": {
+                    "contains": {
+                        "type": "array",
+                        "minItems": 2,
+                        "items": [
+                            {
+                                "const": "sats_per_m2"
+                            },
+                            {
+                                "pattern": "^[1-9][0-9]*$"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

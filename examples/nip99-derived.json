@@ -1,0 +1,42 @@
+{
+    "id": "0d6d8ac2159fdf2acfe36f71980e28ac95efb80ec037390fce1157a37e360fd1",
+    "pubkey": "1bf419f4ecfc12d7be0b0509d24bf65b45dd96facf7106e37bc1022ff162f7ae",
+    "created_at": 1769021000,
+    "kind": 30402,
+    "content": "Derived mirror from canonical kind:30023 listing",
+    "tags": [
+        [
+            "d",
+            "1dd17ee8-4fd0-4c40-a748-c1a77938fcb0"
+        ],
+        [
+            "a",
+            "30023:1bf419f4ecfc12d7be0b0509d24bf65b45dd96facf7106e37bc1022ff162f7ae:1dd17ee8-4fd0-4c40-a748-c1a77938fcb0"
+        ],
+        [
+            "title",
+            "Sell listing mirror"
+        ],
+        [
+            "summary",
+            "Canonical source is kind 30023"
+        ],
+        [
+            "published_at",
+            "1769021000"
+        ],
+        [
+            "status",
+            "active"
+        ],
+        [
+            "location",
+            "61.77312286453146,64.33593750000001"
+        ],
+        [
+            "price",
+            "4500000000",
+            "BTC"
+        ]
+    ]
+}

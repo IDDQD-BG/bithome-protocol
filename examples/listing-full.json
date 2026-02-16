@@ -1,0 +1,93 @@
+{
+    "id": "1f3179ea0f7c1727448f8f30ccefb6695bb264b9625f13f72f1aef6f78386ed2",
+    "pubkey": "e45fb783a023e1997f8c01bf0ed3f7196729cfe596d5c91540bb76801ded77d0",
+    "created_at": 1770585239,
+    "kind": 30023,
+    "content": "",
+    "tags": [
+        [
+            "bithome",
+            "v1"
+        ],
+        [
+            "d",
+            "c19c9f66-8dee-4a05-a6c2-a24012ba5f91"
+        ],
+        [
+            "type",
+            "want_rent"
+        ],
+        [
+            "exp",
+            "1773177239"
+        ],
+        [
+            "lat",
+            "49.60979067991985"
+        ],
+        [
+            "lon",
+            "6.1375737194612165"
+        ],
+        [
+            "radius_km",
+            "0.1"
+        ],
+        [
+            "sats_per_m2",
+            "132940"
+        ],
+        [
+            "price_currency",
+            "eur"
+        ],
+        [
+            "price_display",
+            "до 800 eur"
+        ],
+        [
+            "price_min",
+            "0"
+        ],
+        [
+            "price_max",
+            "1330550"
+        ],
+        [
+            "sqm_min",
+            "10"
+        ],
+        [
+            "sqm_max",
+            ""
+        ],
+        [
+            "title",
+            "Cuchen winning"
+        ],
+        [
+            "move_in",
+            "01.06.2026"
+        ],
+        [
+            "property_type",
+            "office"
+        ],
+        [
+            "rooms",
+            "1"
+        ],
+        [
+            "features",
+            "Мотор"
+        ],
+        [
+            "contact",
+            "Любомир Станков"
+        ],
+        [
+            "email",
+            "allximika@gmail.com"
+        ]
+    ]
+}
