@@ -81,6 +81,7 @@ Canonical data always lives in `kind:30023`.
 ## Repository Layout
 
 - `PROTOCOL.md` — normative protocol specification
+- `HARDWARE.md` — hardware requirements for clients, developers, and relay operators
 - `examples/` — ready-to-test canonical and derived event examples
 - `schema/listing-schema.json` — JSON Schema for validation
 - `RELEASE-CHECKLIST.md` — publication and consistency checklist
