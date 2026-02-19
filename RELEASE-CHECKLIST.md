@@ -2,31 +2,33 @@
 
 ## Repository basics
 
-- [ ] Repository created as `bithome-protocol`
+- [x] Repository created as `bithome-protocol`
 - [ ] Public visibility enabled
 - [ ] Default branch set (`main`)
 
 ## Core files
 
-- [ ] `README.md` committed
-- [ ] `PROTOCOL.md` committed
-- [ ] `examples/` committed
-- [ ] `schema/listing-schema.json` committed
+- [x] `README.md` committed
+- [x] `PROTOCOL.md` committed
+- [x] `examples/` committed
+- [x] `schema/listing-schema.json` committed
+- [x] `scripts/` directory with validation tools committed
 
 ## Protocol consistency
 
-- [ ] `kind:30023` defined as canonical source
-- [ ] `d` marked REQUIRED everywhere
-- [ ] `d` UUIDv4 requirement consistent in docs/examples/schema
-- [ ] Replace semantics documented (same pubkey + same d + newer created_at)
-- [ ] No extra business logic introduced in protocol docs
+- [x] `kind:30023` defined as canonical source
+- [x] `d` marked REQUIRED everywhere
+- [x] `d` UUIDv4 requirement consistent in docs/examples/schema
+- [x] Replace semantics documented (same pubkey + same d + newer created_at)
+- [x] No extra business logic introduced in protocol docs
 
 ## Example validation
 
-- [ ] `listing-basic.json` validates against schema
-- [ ] `listing-full.json` validates against schema
-- [ ] `listing-updated.json` validates and reuses same `d` as basic
-- [ ] `nip99-derived.json` keeps same `d` and remains marked as derived
+- [x] `listing-basic.json` validates against schema
+- [x] `listing-full.json` validates against schema
+- [x] `listing-updated.json` validates and reuses same `d` as basic
+- [x] `nip99-derived.json` keeps same `d` and remains marked as derived
+- [x] Validation script created and passes all checks
 
 ## Publication
 
