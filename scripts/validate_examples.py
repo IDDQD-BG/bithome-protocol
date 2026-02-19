@@ -17,10 +17,9 @@ from pathlib import Path
 try:
     from jsonschema import validate, ValidationError, Draft7Validator
 except ImportError:
-    print("Error: jsonschema library not found. Installing...")
-    import subprocess
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "jsonschema"])
-    from jsonschema import validate, ValidationError, Draft7Validator
+    print("Error: jsonschema library not found.")
+    print("Please install it with: pip install jsonschema")
+    sys.exit(1)
 
 
 def load_json(filepath):

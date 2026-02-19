@@ -21,7 +21,7 @@ python3 scripts/validate_examples.py
 
 **Requirements:**
 - Python 3.6+
-- `jsonschema` library (auto-installed if missing)
+- `jsonschema` library: `pip install jsonschema`
 
 **Exit codes:**
 - `0`: All validations passed
